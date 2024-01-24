@@ -37,6 +37,10 @@
 
 /* Style */
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: var(--clr-light);
     color: var(--clr-dark);
@@ -59,7 +63,7 @@ strong { font-weight: var(--fw-bold) }
 
 :focus {
     outline: 3px solid var(--clr-accent);
-    outline-offset: 3px;
+    outline-offset: 5px;
 }
 
 .btn {
@@ -75,7 +79,6 @@ strong { font-weight: var(--fw-bold) }
     font-weight: var(--fw-bold);
     transition: transform 200ms ease-in-out;
 }
-
 
 .btn:hover {
     transform: scale(1.1);
@@ -236,7 +239,7 @@ header {
     display: inline-block;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 900px) {
     .intro {
         display: grid;
         width: min-content;
@@ -268,6 +271,7 @@ header {
 /* Services */
 
 .my-services {
+    position: relative;
     background-color: var(--clr-dark);
     /* background-image: url(); */
     background-size: cover;
@@ -296,6 +300,7 @@ header {
 }
 
 .services {
+    max-width: 1000px;
     margin-bottom: 4em;
 }
 
@@ -319,6 +324,7 @@ header {
 /* About Me */
 
 .about-me {
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -435,3 +441,18 @@ header {
 .social-list__link {
     padding: 0.5em;
 }
+
+/* Portfolio Item */
+
+.portfolio-item-individual {
+    padding: 0 2em 2em;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.portfolio-item-individual p {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
